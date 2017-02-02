@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS_template</title>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="js/template.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <div class="header">
+      <img src = "img\angry_hamster.jpg">
+      <script type="text/template" id="test">
+      <% for (var i = 0; i < data.length; i++) { %>
+       <h1><%= data[i].title %></h1>
+       <p><%= data[i].content %></p>
+      <% }; %>
+     </script>
+    </div>
+
+    <div class="info">
+     <script type="text/template" id="test2">
+     <% for (var i = 0; i < data.length; i++) { %>
+       <h2><%= data[i].title %></h2>
+       <ul><li><%= data[i].content %></li></ul>
+    <% }; %>
+     </script>
+   </div>
+
+   <div class="contacts">
+       <script type="text/template" id="test3">
+       <% for (var i = 0; i < data.length; i++) { %>
+       <h2><%= data[i].title %></h2>
+       <p><%= data[i].content %></p>
+     <% }; %>
+    </script>
+   </div>
+
+</body>
+</html>
